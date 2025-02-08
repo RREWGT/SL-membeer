@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL member</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #000000;
+      text-align: right;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .people-section {
+      padding: 3rem;
+    }
+
+    .people-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+   /* 🌟 تحسين ألوان البطاقات */
+.person-card {
+    background: linear-gradient(160deg, #1a1a1a 0%, #2e2e2e 100%);  /* تدرج داخلي */
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #505050;  /* حد رمادي فاتح */
+    cursor: pointer;
+}
+
+.person-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3); /* تأثير نيون رمادي */
+}
+
+/* تحسين شكل الصور داخل البطاقات */
+.person-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid #505050;  /* حد رمادي فاتح */
+}
+
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .person-card h2:active {
+      animation: pulse 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SL SERVER 👥</h1>
+    <a href="https://discord.gg/bfyCvDnGMb" class="discord-btn" target="_blank">🚀 انضم إلى ديسكورد</a>
+  </header>
+
+  <section class="people-section">
+    <div class="people-container">
+
+      <div class="person-card" onclick="window.location.href='s3oo.html'">
+        <img src="https://cdn.discordapp.com/attachments/1255577560625053758/1337850840744071289/image.png?ex=67a8f230&is=67a7a0b0&hm=71a12ff52ebe4b3efb9c6b2232015afd7fe0a8d51f36b9057bcd2e4785d16b91&" alt="S3OO">
+        <h2>S3OO</h2>
+        <p>افضل ايم فالعالم 🔞</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='rgh.html'">
+        <img src="https://cdn.discordapp.com/attachments/1255577560625053758/1337855123732431050/image.png?ex=67a8f62d&is=67a7a4ad&hm=5c217536197cb9878579a02b4395bcf154156bc39ef235e66bf29d42ba43bee9&" alt="RGH">
+        <h2>RGH</h2>
+        <p>الافضل</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='rami.html'">
+        <img src="data:image/jpeg;base64,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" alt="RAMI">
+        <h2>RAMI</h2>
+        <p>المبرمج الاعضم💻</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='ali.html'">
+        <img src="https://cdn.discordapp.com/attachments/1246244624280850453/1337856912217211001/image.png?ex=67a8f7d8&is=67a7a658&hm=e6e7d5a7b104e355f26c20806ed2267ff3dd2975550103567bdddaa873aa211d&" alt="ALI">
+        <h2>ALI</h2>
+        <p>ابو خشم</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='motaz.html'">
+        <img src="https://cdn.discordapp.com/attachments/1178456143950004256/1337858194071883897/image.png?ex=67a8f909&is=67a7a789&hm=7d03fd478c70cf81e64d3c4da2d2d0b652222adf10feddf42f2982759b819a28&" alt="MOTAZ">
+        <h2>MOTAZ</h2>
+        <p>لاعب منحرف</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='aozo.html'">
+        <img src="https://cdn.discordapp.com/attachments/1178456143950004256/1337858973243543602/image.png?ex=67a8f9c3&is=67a7a843&hm=822fe9dc2fbb9199ebf63af6994fe9cd8e56a57941f1d85ac459bf4602cd0378&" alt="AOZO">
+        <h2>AOZO</h2>
+        <p>مستحيل يقول ما اعرف </p>
+      </div>
+
+
+      <div class="person-card" onclick="window.location.href='jasm.html'">
+        <img src="https://cdn.discordapp.com/attachments/1178456143950004256/1337858845078458428/image.png?ex=67a8f9a4&is=67a7a824&hm=5377045358341dd7cdd239ef7917c31cf8ca4fbdbed4d7fd2ae46caee11e0ac0&" alt="JASM">
+        <h2>JASM</h2>
+        <p>اكبر كرنج فالحياه</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='wafi.html'">
+        <img src="https://cdn.discordapp.com/attachments/1255577560625053758/1337863696063533170/image.png?ex=67a8fe29&is=67a7aca9&hm=893f25528d41f3188c26931275296aae4737cca775b1b21398982c25529f2abf&" alt="WAFI">
+        <h2>WAFI</h2>
+        <p>الجموم منبع الهموم</p>
+      </div>
+
+      <div class="person-card" onclick="window.location.href='samer.html'">
+        <img src="data:image/jpeg;base64,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" alt="SAMER">
+        <h2>SAMER</h2>
+        <p>مصور محترف📷</p>
+      </div>
+    
+      <div class="person-card" onclick="window.location.href='hashim.html'">
+        <img src="https://cdn.discordapp.com/attachments/1178456143950004256/1337862687916425226/image.png?ex=67a8fd39&is=67a7abb9&hm=8d2904d9cae9b7de40031be265ac4203db4553f30f9fc017602d7abc8cdee027&" alt="HASHIM">
+        <h2>HASHIM</h2>
+        <p>زري</p>
+      </div>
+      <div class="person-card" onclick="window.location.href='jawad.html'">
+        <img src="https://cdn.discordapp.com/attachments/1255577560625053758/1337870197989707858/image.png?ex=67a90437&is=67a7b2b7&hm=4b5a4dd7719a0c38948d648f66a49bbdd4de6314ea0173a9d5d6de8789ee18dc&" alt="jawad">
+        <h2>jawad</h2>
+        <p>بتاع كلو </p>
+      </div>
+
+    </div>
+  </section>
+  <header>
+    <a href="index.html">
+      <img src="https://cdn.discordapp.com/attachments/1295869310287478834/1334739356048691210/12_20241225021236.png?ex=67a8d524&is=67a783a4&hm=6e32b19c60f29b3b9f00f2de4dc921809155a94f87ccb2998b5bc1a2a1df97e6&" alt="Logo" class="logo">
+    </a>
+    <h1>اسم الصفحة هنا</h1>
+  </header>
+  
+  <footer>
+    <p>© 2025 S L جميع الحقوق محفوظة لدى 👥</p>
+  </footer>
+</body>
+</html>
+
